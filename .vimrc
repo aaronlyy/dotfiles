@@ -13,7 +13,6 @@ set cursorline       " Aktuelle Zeile hervorheben
 set number           " Zeilennummern anzeigen
 set relativenumber   " Relative Zeilennummern (nützlich für Bewegung)
 set mouse=a          " Maus-Unterstützung aktivieren (optional)
-set clipboard=unnamedplus " System-Clipboard nutzen (copy/paste zwischen Vim und anderen Programmen)
 set showcmd          " Zeige getippte Befehle unten an
 set showmode         " Zeige aktuellen Modus unten an (Normal, Insert, etc.)
 set hidden           " Zwischen Buffers wechseln ohne zu speichern
