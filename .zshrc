@@ -1,29 +1,34 @@
-# Path to oh-my-zsh installation
 export ZSH="$HOME/.oh-my-zsh"
 export GPG_TTY=$(tty)
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home"
 
-# Theme
+# 3rd party tools setup
+eval "$(zoxide init zsh)"
+source <(fzf --zsh)
+
+# theme
 ZSH_THEME="half-life"
 
-# Plugins
+# plugins
 plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
 
-# Load oh-my-zsh
+# load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# -------------------------
-# Custom Aliases and Functions
-# -------------------------
+# config editing
+alias zshcfg="vim ~/.zshrc"
 
-# Configuration Editing
-alias zshconfig="vim ~/.zshrc"
+# better cd
+alias cd="z"
+
+# better ls
+alias ls="eza"
 
 # Additional Git Aliases (git plugin covers basics already)
-
 # Patch add
 alias gap='git add --patch'
 
